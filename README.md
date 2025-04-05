@@ -7,7 +7,6 @@ This project demonstrates the containerisation of a simple Node.js web applicati
 ## Technologies used:
 
 - Git
-- Visual Studio Code
 - Node.js
 - Docker
 - Docker Compose
@@ -35,17 +34,17 @@ CMD ["node", "simpleserver.js"]
 4. The Docker image was built using the following command:
 
 ```sh 
-docker build -t preethi597/node-web-app
+docker build -t preethi597/node-web-app .
 ```
 5. The docker-compose.yml file was created to manage container deployment and a health check was also added to monitor the container.
 
 6. We start the Docker Compose Environment using below command.
 
 ```sh
-docker-compose
+docker compose up
 ```
 7. Push the image to Dockerhub
 
 ```sh
-docker push preethi597/node-web-app:latest’
+docker push preethi597/node-web-app:latest
 ```
